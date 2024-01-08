@@ -11,7 +11,6 @@ export default function App() {
     axios.get("https://api.adviceslip.com/advice").then(function (response) {
       const { advice } = response.data.slip;
       setAdvice(advice);
-      console.log({ advice });
     });
   }
   return (
