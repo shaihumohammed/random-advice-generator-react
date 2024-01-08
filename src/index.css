@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+body {
+  background: rgb(52, 176, 201);
+  background: linear-gradient(
+    145deg,
+    rgba(52, 176, 201, 0.9640231092436975) 6%,
+    rgba(77, 208, 235, 1) 10%
+  );
+}
+.advice {
+  border-radius: 2rem;
+  background: white;
+  width: 40%;
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid rgb(75, 73, 73);
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+button {
+  height: 3rem;
+  width: 8rem;
+
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  background: #0179db;
+  color: white;
+}
+@media screen and (max-width: 650px) {
+  .advice {
+    width: 90%;
+  }
+  button {
+    height: 2.7rem;
+    width: 7rem;
+    font-size: 1rem;
+  }
+}
